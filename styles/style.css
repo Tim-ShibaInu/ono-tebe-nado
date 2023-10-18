@@ -10,6 +10,7 @@ a {
 .address {
   font-style: normal;
   text-align: left;
+  line-height: 24.3px;
 }
 
 .line-height-115 {
@@ -270,10 +271,6 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 180px 50px 90px;
-}
-
-.address {
-  line-height: 24.3px;
 }
 
 .footer__menu {
