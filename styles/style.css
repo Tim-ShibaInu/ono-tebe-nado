@@ -272,6 +272,10 @@ a {
   padding: 180px 50px 90px;
 }
 
+.address {
+  line-height: 24.3px;
+}
+
 .footer__menu {
   text-align: center;
 }
