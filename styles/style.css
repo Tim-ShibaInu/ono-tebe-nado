@@ -238,7 +238,6 @@ a {
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  grid-template-rows: 240px 240px;
   gap: 8px 25px;
   padding: 180px 50px 0 50px;
 }
