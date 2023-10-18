@@ -81,9 +81,6 @@ a {
 .cover__title {
   position: relative;
   z-index: 2;
-}
-
-.cover__title {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -182,3 +179,49 @@ a {
 .footer__social-icon {
   width: 48px;
 }
+
+
+
+.content__title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+
+
+
+.about {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  grid-template-rows: 240px 240px;
+  row-gap: 8px;
+  padding: 180px 50px 0 50px;
+}
+
+.about__logo {
+  justify-self: center;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  margin: 63px 46px;
+  width: 148px;
+  height: 114px;
+}
+
+.about_title {
+  align-self:  center;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  grid-column: 2/3;
+  font-size: 20px;
+}
+
+
