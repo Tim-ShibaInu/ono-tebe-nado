@@ -12,7 +12,11 @@ a {
   text-align: left;
 }
 
-/* header */
+.line-height-115 {
+  line-height: 115%;
+}
+
+/* header, START */
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -56,9 +60,9 @@ a {
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
-/* header end */
+/* header, END */
 
-/* cover */
+/* cover, START */
 .cover {
   position: relative;
   z-index: 0;
@@ -66,6 +70,7 @@ a {
   background-size: cover;
   background-position: center;
   color: white;
+  width: 1440px;
   height: 757px;
   text-transform: uppercase;
 }
@@ -74,8 +79,8 @@ a {
   position: absolute;
   z-index: 1;
   background-color: rgb(0,0,0, .6);
-  width: 1440px;
-  height: 757px;
+  height: 100%;
+  width: 100%;
 }
 
 .cover__title {
@@ -91,11 +96,8 @@ a {
   top: 165px;
 }
 
-.line-height-115 {
-  line-height: 115%;
-}
 
-/* Cover heading letter-spacing accents, START*/
+  /* Cover heading letter-spacing accents, START*/
 .letter-spacing-extended {
   letter-spacing: 60px;
 }
@@ -103,9 +105,9 @@ a {
 .no-letter-spacing {
   letter-spacing: 0;
 }
-/* Cover heading letter-spacing accents, END*/
+  /* Cover heading letter-spacing accents, END*/
 
-/* Cover heading align, START */
+  /* Cover heading align, START */
 .aligned-text {
   display: block;
   line-height: 100%;
@@ -118,7 +120,7 @@ a {
 .aligned-text_right {
   text-align: right;
 }
-/* Cover heading align, END */
+  /* Cover heading align, END */
 
 .cover__description {
   display: flex;
@@ -142,9 +144,125 @@ a {
   font-size: 22px;
   line-height: 28px;
 }
+/* cover, END */
 
+.content__title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
 
+/* lots, START*/
+.lots {
+  padding: 180px 50px 0 50px;
+  font-size: 20px;
+}
 
+.lots__heading {
+  margin: 0 0 27px 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.card {
+  position: relative;
+  width: 430px;
+  height: 450px;
+
+}
+
+  /* Card description, START*/
+.card__title {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 50px 40px 0 40px;
+  text-decoration: underline;
+  line-height: 120%;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.card__text {
+  position: absolute;
+  z-index: 2;
+  padding: 0 40px 50px 40px;
+  line-height: 120%;
+  bottom: 0;
+}
+  /* Card description, END*/
+
+  /* lots background images, START*/
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+}
+  /* lots background images, END*/
+
+.lots__look-more-link {
+  margin-left: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* lots, END*/
+
+/* about, START*/
+.about {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  grid-template-rows: 240px 240px;
+  gap: 8px 25px;
+  padding: 180px 50px 0 50px;
+}
+
+.about__logo {
+  justify-self: center;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  margin: 63px 46px;
+  width: 148px;
+  height: 114px;
+}
+
+.about_title {
+  align-self:  center;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  grid-column: 2/3;
+  font-size: 20px;
+}
+/* about, END*/
+
+/* footer, START*/
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -179,49 +297,4 @@ a {
 .footer__social-icon {
   width: 48px;
 }
-
-
-
-.content__title {
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
-
-
-
-.about {
-  display: grid;
-  grid-template-columns: 430px 1fr;
-  grid-template-rows: 240px 240px;
-  row-gap: 8px;
-  padding: 180px 50px 0 50px;
-}
-
-.about__logo {
-  justify-self: center;
-  width: 240px;
-  height: 240px;
-  background-color: black;
-  border-radius: 50%;
-}
-
-.about__logo-image {
-  margin: 63px 46px;
-  width: 148px;
-  height: 114px;
-}
-
-.about_title {
-  align-self:  center;
-}
-
-.about__text {
-  display: flex;
-  flex-direction: column;
-  row-gap: 25px;
-  grid-column: 2/3;
-  font-size: 20px;
-}
-
-
+/* footer, END*/
