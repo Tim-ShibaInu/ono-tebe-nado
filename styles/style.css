@@ -39,6 +39,9 @@ a {
 }
 
 .header__logo-image {
+  background-image: url(../images/logo-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 148px;
   height: 105px;
   place-self: center;
