@@ -141,6 +141,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  align-items: center;
   margin-top: 135px;
 }
 
