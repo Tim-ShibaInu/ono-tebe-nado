@@ -81,7 +81,7 @@ button {
   background-position: center;
   color: white;
   width: 1440px;
-  height: 757px;
+  min-height: 757px;
   text-transform: uppercase;
 }
 
@@ -95,15 +95,15 @@ button {
 
 .cover__title {
   position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
+  z-index: 2;
   row-gap: 20px;
   font-size: 100px;
   line-height: 100%;
   letter-spacing: 30px;
-  margin: 0 50px;
-  top: 165px;
+  padding: 165px 50px 0 50px;
 }
 
 .line-height-extended {
@@ -137,13 +137,13 @@ button {
 
 .cover__description {
   display: flex;
-  position: absolute;
+  flex-direction: row;
   align-items: center;
-  bottom: 50px;
-  z-index: 2;
+  margin-top: 135px;
 }
 
 .cover__description-text {
+  z-index: 2;
   font-weight: normal;
   word-spacing: 18px;
   font-size: 22px;
@@ -152,6 +152,7 @@ button {
 }
 
 .bet-button {
+  z-index: 2;
   border: 1px solid white;
   padding: 12px 32px;
   font-size: 22px;
