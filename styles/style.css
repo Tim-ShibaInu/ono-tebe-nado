@@ -188,13 +188,16 @@ button {
 
 .card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 430px;
   height: 450px;
+  background-size: cover;
 }
 
 /* Card description, START*/
 .card__title {
-  position: relative;
   z-index: 2;
   font-size: 22px;
   text-transform: uppercase;
@@ -206,28 +209,23 @@ button {
 }
 
 .card__text {
-  position: absolute;
   z-index: 2;
   padding: 0 40px 50px 40px;
   line-height: 120%;
-  bottom: 0;
 }
 /* Card description, END*/
 
 /* lots background images, START*/
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
 }
 /* lots background images, END*/
 
