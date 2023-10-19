@@ -17,8 +17,10 @@ a {
   line-height: 24.3px;
 }
 
-.line-height-115 {
-  line-height: 115%;
+button {
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 /* header, START */
@@ -58,7 +60,7 @@ a {
 
 .header__link {
   text-decoration: underline;
-  text-underline-offset: 4px
+  text-underline-offset: 4px;
 }
 
 .header__link_active {
@@ -86,7 +88,7 @@ a {
 .overlay {
   position: absolute;
   z-index: 1;
-  background-color: rgb(0,0,0, .6);
+  background-color: rgb(0, 0, 0, 0.6);
   height: 100%;
   width: 100%;
 }
@@ -104,8 +106,11 @@ a {
   top: 165px;
 }
 
+.line-height-extended {
+  line-height: 115%;
+}
 
-  /* Cover heading letter-spacing accents, START*/
+/* Cover heading letter-spacing accents, START*/
 .letter-spacing-extended {
   letter-spacing: 60px;
 }
@@ -113,9 +118,9 @@ a {
 .no-letter-spacing {
   letter-spacing: 0;
 }
-  /* Cover heading letter-spacing accents, END*/
+/* Cover heading letter-spacing accents, END*/
 
-  /* Cover heading align, START */
+/* Cover heading align, START */
 .aligned-text {
   display: block;
   line-height: 100%;
@@ -128,7 +133,7 @@ a {
 .aligned-text_right {
   text-align: right;
 }
-  /* Cover heading align, END */
+/* Cover heading align, END */
 
 .cover__description {
   display: flex;
@@ -150,7 +155,8 @@ a {
   border: 1px solid white;
   padding: 12px 32px;
   font-size: 22px;
-  line-height: 28px;
+  color: white;
+  text-transform: uppercase;
 }
 /* cover, END */
 
@@ -183,10 +189,9 @@ a {
   position: relative;
   width: 430px;
   height: 450px;
-
 }
 
-  /* Card description, START*/
+/* Card description, START*/
 .card__title {
   position: relative;
   z-index: 2;
@@ -206,9 +211,9 @@ a {
   line-height: 120%;
   bottom: 0;
 }
-  /* Card description, END*/
+/* Card description, END*/
 
-  /* lots background images, START*/
+/* lots background images, START*/
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
@@ -223,7 +228,7 @@ a {
   background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
 }
-  /* lots background images, END*/
+/* lots background images, END*/
 
 .lots__look-more-link {
   margin-left: 40px;
@@ -257,7 +262,7 @@ a {
 }
 
 .about_title {
-  align-self:  center;
+  align-self: center;
 }
 
 .about__text {
@@ -286,7 +291,7 @@ a {
 
 .footer__menu-link {
   text-decoration: underline;
-  text-underline-offset: 4px
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
